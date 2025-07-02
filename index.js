@@ -1,2 +1,2 @@
 window.alert(`You are Hacked`)
-console.log(`This is version 2`)
+console.log(`Hey leave the page you are now hacked version 1`)
