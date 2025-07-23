@@ -17,9 +17,43 @@
 
 // console.log(`Hello ${username}, welcome to the JavaScript course!`);
 
-let user;
+// let user;
 
-document.getElementById("sub").onclick = function() {
-    user = document.getElementById("name").value;
-    document.getElementById("myh1").textContent = `Hello ${user}`;
+// document.getElementById("sub").onclick = function() {
+//     user = document.getElementById("name").value;
+//     document.getElementById("myh1").textContent = `Hello ${user}`;
+// }
+// let input = window.prompt("Enter your text");
+// input = Number(input);
+// input = String(input)
+// input = Boolean(input);
+// console.log(input , typeof input);
+
+// const PI = 3.142857142857143;
+// let radius;
+// let circumference;
+ 
+// document.getElementById("sub").onclick = function() {
+//     radius = document.getElementById("radius").value;
+//     circumference = 2 * PI * radius;
+//     document.getElementById("myh3").textContent = `Circumference is ${circumference}`;
+// }
+
+let number =0;
+const increment = document.getElementById("inc");
+const reset = document.getElementById("res");   
+const decrement = document.getElementById("dec")
+
+increment.onclick = function(){
+    number++
+    document.getElementById("state").textContent = number;
+    
+}
+reset.onclick = function(){
+    number = 0;
+    document.getElementById("state").textContent = number;
+}
+decrement.onclick = function(){
+    number--
+    document.getElementById("state").textContent = number;
 }
