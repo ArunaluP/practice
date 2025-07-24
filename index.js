@@ -39,21 +39,42 @@
 //     document.getElementById("myh3").textContent = `Circumference is ${circumference}`;
 // }
 
-let number =0;
-const increment = document.getElementById("inc");
-const reset = document.getElementById("res");   
-const decrement = document.getElementById("dec")
+// let number =0;
+// const increment = document.getElementById("inc");
+// const reset = document.getElementById("res");   
+// const decrement = document.getElementById("dec")
 
-increment.onclick = function(){
-    number++
-    document.getElementById("state").textContent = number;
+// increment.onclick = function(){
+//     number++
+//     document.getElementById("state").textContent = number;
     
-}
-reset.onclick = function(){
-    number = 0;
-    document.getElementById("state").textContent = number;
-}
-decrement.onclick = function(){
-    number--
-    document.getElementById("state").textContent = number;
-}
+// }
+// reset.onclick = function(){
+//     number = 0;
+//     document.getElementById("state").textContent = number;
+// }
+// decrement.onclick = function(){
+//     number--
+//     document.getElementById("state").textContent = number;
+// }
+ let x= 3.5;
+ let y = 2;
+ let z = 1;
+
+let result;
+// result = Math.round(x); // 4
+// result = Math.floor(3.7);
+// result = Math.ceil(3.3)
+// result = Math.pow(5,3)
+// result = Math.sqrt(25);
+// result  =  Math.sin(90 * Math.PI / 180);
+// result  =  Math.cos(60 * Math.PI / 180);
+// result  =  Math.tan(45 * Math.PI / 180);
+//  result = Math.max(x,y,z);
+// result = Math.sign(0.5)
+// result = Math.abs(-5.5);
+// result = Math.log(8)
+// result = Math.trunc(3.3)
+// result = Math.max(3, 5, 7, 2, 8);
+// result = Math.min(3, 5, 7, 2, 8);
+console.log(result);
