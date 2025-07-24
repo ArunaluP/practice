@@ -78,11 +78,55 @@
 // result = Math.max(3, 5, 7, 2, 8);
 // result = Math.min(3, 5, 7, 2, 8);
 // console.log(result);
-let min = 1;
-let max = 6;
-let value;
-document.getElementById("dice").onclick = function (){
-    value = Math.ceil(Math.random()*(max -min) + min);
-    document.getElementById("result").textContent = value;
+// let min = 1;
+// let max = 6;
+// let value;
+// document.getElementById("dice").onclick = function (){
+//     value = Math.ceil(Math.random()*(max -min) + min);
+//     document.getElementById("result").textContent = value;
 
-}
+// }
+// const age = document.getElementById("myinput")
+// const button = document.getElementById("mybutton")
+// const result = document.getElementById("myp")
+
+// button.onclick = function() {
+//     let userAge = Number(age.value);
+//     if (userAge < 18) {
+//         result.textContent = "You are a minor.";
+//     } else if (userAge >= 18 && userAge < 65) {
+//         result.textContent = "You are an adult.";
+//     } else {
+//         result.textContent = "You are a senior citizen.";
+//     }
+// }
+
+// const subbtn = document.getElementById("subscribebtn");
+// const visabtn = document.getElementById("visabtn");
+// const masterbtn = document.getElementById("masterbtn");
+// const paypalbtn = document.getElementById("paypalbtn");
+// const submitbtn = document.getElementById("submitbtn");
+// const sub = document.getElementById("message-1");
+// const pay = document.getElementById("message-2");
+
+// submitbtn.onclick = function(){
+//     if(subbtn.checked){
+//         sub.textContent = "You are subscribed the Service!";
+//     }else{
+//         sub.textContent = "You are not subscribe our Service!";
+//     }
+//     if(visabtn.checked){
+//         pay.textContent = "You have selected Visa Card as your payment method.";
+//     }else if(masterbtn.checked){
+//         pay.textContent = "You have selected Master Card as your payment method.";
+//     }else if(paypalbtn.checked){
+//         pay.textContent = "You have selected Paypal as your payment method.";
+//     }else{
+//         pay.textContent = "You have not selected any payment method.";
+//     }
+
+// }
+let value = 125;
+
+let discount = value>=100 ? 10 : 0 
+console.log (`Your final price ${value - value*discount/100} after ${discount}% discount`);
