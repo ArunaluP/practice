@@ -57,11 +57,11 @@
 //     number--
 //     document.getElementById("state").textContent = number;
 // }
- let x= 3.5;
- let y = 2;
- let z = 1;
+//  let x= 3.5;
+//  let y = 2;
+//  let z = 1;
 
-let result;
+// let result;
 // result = Math.round(x); // 4
 // result = Math.floor(3.7);
 // result = Math.ceil(3.3)
@@ -77,4 +77,12 @@ let result;
 // result = Math.trunc(3.3)
 // result = Math.max(3, 5, 7, 2, 8);
 // result = Math.min(3, 5, 7, 2, 8);
-console.log(result);
+// console.log(result);
+let min = 1;
+let max = 6;
+let value;
+document.getElementById("dice").onclick = function (){
+    value = Math.ceil(Math.random()*(max -min) + min);
+    document.getElementById("result").textContent = value;
+
+}
