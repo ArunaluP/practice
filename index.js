@@ -126,7 +126,39 @@
 //     }
 
 // }
-let value = 125;
+// let marks = 15;
+// let grade;
 
-let discount = value>=100 ? 10 : 0 
-console.log (`Your final price ${value - value*discount/100} after ${discount}% discount`);
+// switch(true){
+//     case marks>=90 :
+//         grade = "A";
+//         break;
+//     case marks < 90 && marks >= 80 :
+//         grade = "B";
+//         break;
+//     case marks<80 && marks >=60 :
+//         grade = "C";
+//         break;
+//     case marks<60 && marks >=35 :
+//         grade = "S";
+//         break;
+//     default:
+//         grade = "F";
+//         break;
+// }
+// console.log(`Your grade is ${grade}`);
+let name = "Arunalu Prabhatha";
+// console.log(name.charAt(3)); // Length of the string
+// console.log(name.indexOf("a"))
+// console.log(name.lastIndexOf("a"));
+// console.log(name.length);
+// console.log(name.trim())
+// console.log(name.toUpperCase());
+// console.log(name.toLowerCase());
+// console.log(name.repeat(3))
+// console.log(name.startsWith("A_0"))
+// console.log(name.endsWith("tha"));
+// console.log(name.includes("bha"))
+// console.log(name.replaceAll("a","A"))
+// console.log(name.padStart(20,"*"))
+// console.log(name.padEnd(25,"*"))
