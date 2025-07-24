@@ -162,3 +162,43 @@
 // console.log(name.replaceAll("a","A"))
 // console.log(name.padStart(20,"*"))
 // console.log(name.padEnd(25,"*"))
+// -----String Slicing-----
+// const name = "Arunalu Prabhatha"
+
+// console.log(`first Name : ${name.slice(0,name.indexOf(" "))} Last Name : ${name.slice(name.indexOf(" ") + 1)}`);
+
+// -----Method Chaining-----
+
+// let name = window.prompt("Enter your name: ")
+
+// let firstCharacter = name.charAt(0)
+// let capitalfirst = firstCharacter.toUpperCase()
+// let restOfName = name.slice(1)
+// let restname = restOfName.toLowerCase()
+
+// let finalName = capitalfirst + restname
+
+// console.log(`Your name is: ${finalName}`);
+//Logical Operaters
+
+// let temp = 1000
+
+// if (temp > 0 && temp <= 30) {
+//     console.log(`Good temperature`)
+// }else{
+//     console.log(`Bad temperature`)
+
+// }
+// if (temp < 0 || temp >= 30) {
+//     console.log(`Bad temperature`)
+// }else{
+//     console.log(`Good temperature`)
+
+// }
+// let isStudent = true
+
+// if (isStudent){
+//     console.log(`Please Login to the system`)
+// }else{
+//     console.log(`Please Register to the system`)
+// }
