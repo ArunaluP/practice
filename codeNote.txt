@@ -202,3 +202,39 @@
 // }else{
 //     console.log(`Please Register to the system`)
 // }
+// let number = 5
+
+// if(number != '5'){
+//     console.log("The Number is not 5")
+// }else{
+//     console.log("The Number is really 5")
+
+// }
+// let num = 5
+
+// if(num == '5'){
+//     console.log("The Number is  5")
+// }else{
+//     console.log("The Number is Not 5")
+
+// }
+
+// ===/!== check the type of the value
+// ==/!= check the value only not the type 
+// let name ="";
+
+// while(name === "") {
+//     name = window.prompt("please Enter your name")
+// }
+
+// let name ;
+
+// do{
+//      name = window.prompt("Please enter your name ")
+// }while(name === "" || name === null);
+
+// console.log("Hello " + name);
+for(let i = 0 ; i<11; i+=2){
+//     if(i === 6) continue;
+//     console.log(i)
+// }
