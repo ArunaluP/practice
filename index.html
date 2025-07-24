@@ -7,12 +7,17 @@
     <title>first page</title>
 </head>
 <body>
-    <label id="state">0</label>
-    <div>
-        <button id = "inc" class="butstyle">Increment</button>
-        <button id = "res" class="butstyle">Reset</button>
-        <button id = "dec" class="butstyle">Decrement</button>
-    </div>
-    <script src="index.js"></script>
+   <input type="checkbox" id = "subscribebtn">
+    <label for="subscribebtn">Subscribe</label>
+   <input type="radio" id = "visabtn" name ="card" >
+    <label for="visabtn">VISA</label>
+   <input type="radio" id = "masterbtn" name = "card">
+    <label for="masterbtn">Master</label>
+   <input type="radio" id = "paypalbtn" name = "card">
+    <label for="paypalbtn">PayPal</label>
+    <button type="submit" id = "submitbtn">Submit</button>
+    <p id = "message-1"></p>
+    <p id = "message-2"></p>
+   <script src="index.js"></script>
 </body>
 </html>
