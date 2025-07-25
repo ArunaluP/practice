@@ -1,29 +1,17 @@
-let min = 1;
-let max = 100;
+// let name = window.prompt("What is your name?");
+// let age = Number(window.prompt("What is your age?"));
 
-const number = Math.ceil(Math.random()*(max - min) + min)
+// function greetUser(name, age) {
+//   console.log(`Hello ${age}, you are ${name} years old!`);
+// }
+// greetUser(age , name);
 
-let isTrue = false
-let attempts = 0
-
-while (!isTrue) {
-    let guess  =  window.prompt(`Guess a number between ${min} and ${max}`);
-    guess = Number(guess);
-    attempts++;
-
-    if (isNaN(guess)) {
-        window.alert("Please enter a valid number.");
-        
-    }else if(guess < min || guess > max) {
-        window.alert(`Please enter a number between ${min} and ${max}.`);
-    }else{
-        if (guess === number) {
-            alert("Congratulations! You guessed the number in " + attempts + " attempts!");
-            isTrue = true;
-        } else if (guess < number) {
-            alert("Too low! Try again.");
-        } else {
-            alert("Too high! Try again.");
-        }
-    }
+function checkEmail(email) {
+    return email.includes('@') && email.includes('.');
 }
+ if(checkEmail(window.prompt("Enter your Email : "))){
+    window.alert("Entered Email is a valid one");
+ }else{
+    window.alert("Entered Email is not a valid one");
+ }
+ 
