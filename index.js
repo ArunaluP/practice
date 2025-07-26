@@ -1,33 +1,29 @@
-function RandomPasswordGenerator(includeLowercase, includeUppercase, includeNummbers, includeSymbols, length) {
-    let password = ""
-    const lowercase = "abcdefghijklmnopqrstuvwxyz"
-    const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    const numbers = "0123456789"
-    const symbols = "!@#$%^&*()" 
+// let nembers = [1,2,3,4,5]
 
-    let allowedChars = ""
-    allowedChars += includeLowercase ? lowercase : ""
-    allowedChars += includeUppercase ? uppercase : ""
-    allowedChars += includeNummbers ? numbers : ""
-    allowedChars += includeSymbols ? symbols : ""
+// function double(element , index , array) {
+//     array[index] = element * 2;
+// }
 
-    if (length === 0) {    
-        console.log("Password length should be at least 1 character long")
-    }else if(length > 1){
-        for(let i = 0 ;i<length; i++){
-            const randomIndex = Math.floor(Math.random() * allowedChars.length)
-            password += allowedChars.charAt(randomIndex)
-        
-        }
-        return password
-    
-    }
+// nembers.forEach(double)
+
+// function display(element){
+//     console.log(element)
+// }
+// nembers.forEach(display)
+
+function sum(callback,a,b){
+    let result = a+b;
+    callback(result)
 }
-
-const length= 9
-const includeLowercase = true
-const includeUppercase = true
-const includeNummbers = true
-const includeSymbols = true
-
-console.log(RandomPasswordGenerator(includeLowercase, includeUppercase, includeNummbers, includeSymbols, length))
+function display(value){
+    console.log(value)
+}
+sum(display,5,4)
+function hello(callback){
+    console.log("hello")
+    callback()
+}
+function bye(){
+    console.log("bye")
+}
+hello(bye)
