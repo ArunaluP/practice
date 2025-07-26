@@ -403,3 +403,114 @@ function RandomPasswordGenerator(includeLowercase, includeUppercase, includeNumm
 // const includeSymbols = true
 
 // console.log(RandomPasswordGenerator(includeLowercase, includeUppercase, includeNummbers, includeSymbols, length))
+// let nembers = [1,2,3,4,5]
+
+// function double(element , index , array) {
+//     array[index] = element * 2;
+// }
+
+// nembers.forEach(double)
+
+// function display(element){
+//     console.log(element)
+// }
+// nembers.forEach(display)
+
+// function sum(callback,a,b){
+//     let result = a+b;
+//     callback(result)
+// }
+// function display(value){
+//     console.log(value)
+// }
+// sum(display,5,4)
+// function hello(callback){
+//     console.log("hello")
+//     callback()
+// }
+// function bye(){
+//     console.log("bye")
+// }
+// hello(bye)
+// const numbers = [1,2,3,4,5]
+
+
+// function square(element) {
+//     return Math.pow(element,2)
+// }
+
+// const squareNum =numbers.map(square)
+// console.log(squareNum)
+// const dates = ["2022-04-24","2022-04-25","2022-04-26"]
+
+// function formateDates(day){
+//     const parts = day.split("-")
+//     return `${parts[1]}/${parts[2]}/${parts[0]}`
+
+// }
+// const newArray = dates.map(formateDates)
+// console.log(newArray)
+// const words = ["spray", "limit", "elite", "exuberant", "destruction", "present"]
+// function capitalize(element){
+//     return element.charAt(0).toUpperCase() + element.slice(1).toLowerCase()
+// }
+// const newWords = words.map(capitalize)
+// console.log(newWords)
+
+// Filter function
+
+// const numbers = [1,2,3,4,5,6,7,8,9,10]
+
+// function isEven(element){
+//     return element % 2 === 0
+// }
+// const evenNumbers = numbers.filter(isEven)
+// console.log(evenNumbers)
+
+// const words = ["sponge", "limit", "elite", "exuberant", "destruction", "present"]
+
+// function isLongerThanFive(element){
+//     return element.length > 5
+// }
+// const longWords = words.filter(isLongerThanFive)
+// console.log(longWords)
+// Reduce function
+// const numbers  = [5,7,3,6,9,1,8,5,4,2]
+
+// function sum(accumulator,element) {
+//     return accumulator + element
+// }
+
+// const result = numbers.reduce(sum)
+// console.log(result)
+
+// function findMax(accumulator,element) {
+//     if (element > accumulator) {
+//         return element
+//     } else {
+//         return accumulator
+//     }
+// }
+
+// const max = numbers.reduce(findMax)
+// console.log(max)
+
+//function expression 
+
+// let square = function(element) {
+//     return Math.pow(element,2)
+
+// }
+
+// console.log(square(5))
+
+// const numbers = [5,7,3,6,9,1,8,5,4,2]
+
+// const result = numbers.map( function(element) {
+//     return Math.pow(element,2)
+
+// })
+// console.log(result)
+
+// function expression is use the function as a variable or a value .
+// it is use to pass the function as a argument to another function. it is use to return

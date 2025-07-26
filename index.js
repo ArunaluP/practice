@@ -1,29 +1,18 @@
-// let nembers = [1,2,3,4,5]
+// setTimeout(function(){
+//     console.log("I am the hero")
+// },3000)
 
-// function double(element , index , array) {
-//     array[index] = element * 2;
-// }
+// const sum = (a,b) =>{ a=a+b;return a+b}
 
-// nembers.forEach(double)
 
-// function display(element){
-//     console.log(element)
-// }
-// nembers.forEach(display)
+// console.log(sum(1,2))
 
-function sum(callback,a,b){
-    let result = a+b;
-    callback(result)
-}
-function display(value){
-    console.log(value)
-}
-sum(display,5,4)
-function hello(callback){
-    console.log("hello")
-    callback()
-}
-function bye(){
-    console.log("bye")
-}
-hello(bye)
+const numbers = [1,2,3,4,5]
+
+const square = numbers.map((element) => Math.pow(element,2))
+const cube = numbers.map((element) => Math.pow(element,3))
+const isEven = numbers.filter((element) => element%2==0)
+const isOdd = numbers.filter((element) => element%2!=0)
+const sum = numbers.reduce((a,b) => a+b)
+
+console.log(sum)
