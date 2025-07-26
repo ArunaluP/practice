@@ -284,3 +284,89 @@ let min = 1;
 //     }
 // }
 // local scope and the global scope of a variable 
+const value = document.getElementById('inputValue');
+// const celVal = document.getElementById("cel")
+// const fahVal = document.getElementById("fah");
+// const convert = document.getElementById("convertButton");
+// const result = document.getElementById("result");
+// let temp;
+
+// convert.onclick = function() {
+//     temp = parseFloat(value.value);
+//     if (isNaN(temp)) {
+//         result.innerHTML = "Please enter a valid number.";
+//         return;
+//     }
+    
+//     if (celVal.checked) {
+//         let fahrenheit = (temp * 9/5) + 32;
+//         result.textContent = `${temp}°C is equal to ${fahrenheit.toFixed(2)}°F`;
+//     } else if (fahVal.checked) {
+//         let celsius = (temp - 32) * 5/9;
+//         result.textContent = `${temp}°F is equal to ${celsius.toFixed(2)}°C`;
+//     } else {
+//         result.textContent = "Please select a conversion type.";
+//     }
+// }
+let fruits = ["Apple", "Banana", "Cherry", "Date", "Elderberry"];
+
+
+// fruits.push("Mango")
+// fruits.pop()
+// fruits.unshift("Tamarind")
+// fruits.shift()
+// console.log(fruits.length)
+// fruits.sort()
+// fruits.sort().reverse()
+// console.log(fruits.indexOf("Cherry"))
+
+// console.log(fruits)
+
+// for(let i = 0;i<fruits.length;i++){
+//     console.log(fruits[i]);
+// }
+// //---Enhance LOOP---
+// for(let fruit of fruits){
+//     console.log(fruit);
+// }
+// spread operator
+
+//let numbers = [1, 2, 3, 4, 5];
+
+//console.log(Math.max(...numbers)); // Output: 5
+
+// let username = "Arunalu Prabhatha";
+// let usernameletters = [...username];
+// console.log(usernameletters);
+// let newusername = [...username].join("-")
+// console.log(newusername)
+// let fruits = ["apple", "banana", "cherry"];
+// let vegetables = ["carrot", "broccoli", "spinach"];
+// let food = [...fruits, ...vegetables,"egg", "cheese"];
+// console.log(food);
+
+// rest parameters
+
+// let  food1 = "soya"
+// let  food2 = "chili"
+// let  food3 = "peanuts"
+//  function foods(...foods) {
+//     for (let food of foods) {
+//         console.log(food);
+//     }
+//  }
+//  foods(food1, food2, food3)
+
+// function average(...numbers) {
+//     let sum = 0
+//     for(let number of numbers) {
+//         sum += number;
+//     }
+//     return sum / numbers.length;
+// }
+
+// console.log(average(10, 20, 30, 40, 50)); // Output: 30
+// function combineStr(...strings) {
+//     return strings.join(" ");
+// }
+// console.log(combineStr("Hello" , "I" , "am" , "from" , "Sri Lanka"));
