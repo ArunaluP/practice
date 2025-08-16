@@ -541,3 +541,90 @@ const person = {
 // }
 
 // person.increment
+// This keyword is does not work in arrow functions because arrow functions does not have its own this keyword.
+ it is use the this keyword of its parent
+ // this keyword is use in the case where we want to access the properties of the object 
+// //inside it
+
+// const person ={
+//     name : 'Arunalu Prabhatha',
+//     age : 25,
+//     isStudent: true,
+//     sayName:function(){
+//         console.log(`My name is ${this.name}`)
+//     }
+// }
+
+// person.sayName();
+
+// //we cant use this keyword with the arrow function
+// const persondefault ={
+//     name : 'Arunalu Prabhatha',
+//     age : 25,
+//     isStudent: true,
+//     sayName:() => console.log(`My name is ${this.name}`)
+// } 
+// persondefault.sayName();//this part is not work in the code 
+// // object constructor
+// function Car (make, model, year){
+//     this.make = make;
+//     this.model =model;
+//     this.year =year;
+//     this.driveCar = function(){
+//         console.log(`Driving a ${this.model}`)
+//     }
+// }
+
+// const Car1 = new Car(`Toyota`,`Corolla`,2024)
+
+// Car1.driveCar()
+// console.log(Car1.make)
+//Class in javasctipt
+
+// class Product {
+//     constructor(name,price){
+//         this.name = name;
+//         this.price = price;
+//     }//construdtor of the class
+
+//     getPrice(){
+//         console.log(`The price of ${this.name} is ${this.price}`)
+//     }
+
+//     calculatetotal(tax){
+//         return this.price + this.price * tax;
+//     }
+// }
+// const tax = 0.05;
+// const product1 = new Product(`Laptop`, 1000);
+// product1.getPrice();
+// console.log(product1.calculatetotal(tax))
+// STATIC keyword
+
+// class MathUtils {
+//     static PI = 3.1459
+
+//     static getcCircumeference(radius){
+//         return 2 * this.PI * radius;
+//     }
+    
+// }
+// const math = new MathUtils()
+// console.log(math.PI)//undefined
+// console.log(MathUtils.PI) // 3.1459
+
+// console.log(MathUtils.getcCircumeference(10).Math.toFixed(2)) // 62.918
+// 
+// class User {
+//     static userCount =0
+
+//     constructor(name){
+//         this.username = name
+//         User.userCount += 1; // Increment user count each time a new user is created
+//     }
+// }
+// const user1 = new User(`Arunalu`)
+// const user2 = new User(`Arunalu`)
+// const user3 = new User(`Arunalu`)
+
+// console.log(User.userCount)
