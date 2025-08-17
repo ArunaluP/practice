@@ -628,3 +628,290 @@ const person = {
 // const user3 = new User(`Arunalu`)
 
 // console.log(User.userCount)
+----------------------------------------------------------------------------------------------------------
+//Inheritance
+class Animal { 
+    alive = true;
+    eat() {
+        console.log(`${this.name} is eating`)
+    }
+
+}
+class Rabbit extends Animal {
+    name = `rabbit`
+}
+class Fish extends Animal {
+    name = `fish`
+}
+class Hawk extends Animal {
+    name = `hawk`
+}
+
+const rabbit = new Rabbit();
+rabbit.eat();
+const fish = new Fish();
+fish.eat();
+const hawk = new Hawk();
+hawk.eat();
+----------------------------------------------------------------------------------------------------------
+// Super keyword 
+
+// class Animal {
+//     constructor(name, age){
+//         this.name = name
+//         this.age = age
+//     }
+//     move(speed){
+//         console.log(`${this.name} is moving at ${speed}km/h`)
+//     }
+// }
+// class Rabbit extends Animal{
+//     constructor(name,age,speed){
+//         super(name,age);
+//         this.speed = speed
+//     }
+//     move(){
+//         super.move(this.speed);
+//     }
+// }
+
+// const rabbit = new Rabbit('Bunny', 2, 10);
+
+// rabbit.move();
+----------------------------------------------------------------------------------------------------------
+// setters make a property writable
+// // getters make a property readable
+
+// class User{
+//     constructor(name, age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     set name(newName){
+//         if(typeof newName === "string" && newName.length > 0){
+//             this._name = newName;
+//         }else{
+//             console.error("Invalid name");
+//         }
+//     }
+//     set age(newAge){
+//         if(typeof newAge === "number" && newAge> 0){
+//             this._Age = newAge;
+//         }else{
+//             console.error("the person is not born yet");
+//         }
+//     }
+//     get name(){
+//         return this._name;
+//     }
+//     get age(){
+//         return this._Age + 5;// we can set the value like this and can set the values that are not taking as a parameter of the constructor
+//     }
+// }
+// //
+// const user1 = new User("John", 30);
+
+// console.log(user1.name);
+// console.log(user1.age);
+// ----------------------------------------------------------------------------------------------------------
+// // distructure
+
+//  let a = 5;
+//  let b = 3;
+
+//  [a, b] = [b, a];
+
+//  console.log(a, b); // Output: 3 5
+
+//  //array distructuring
+
+//  const fruits = ['apple', 'banana', 'cherry','orange','mango'];
+
+//  [fruits[0],fruits[1]] = [fruits[1], fruits[0]];
+
+//  console.log(fruits)
+
+//  const [first, second, ...rest]  = fruits;
+
+//  console.log(first)
+//  console.log(second)
+//  console.log(rest)
+
+//object destructure
+// const person = {
+//     name : `Arunalu`,
+//     age : 23,
+//     city : `sooriyawewa`,
+//     job : `developer`
+// }
+
+// // const {name , age , city = `default city`} = person;
+// // console.log(name)
+// // console.log(city)
+
+// // const {name , age , ...rest } = person
+
+// function display({name, age , city = `default city`,job , married = false}) {
+//     console.log(name)
+//     console.log( age);
+//     console.log( city);
+//     console.log( job);
+//     console.log( married);
+// }
+
+// display(person)
+// ----------------------------------------------------------------------------------------------------------
+//push
+//pop 
+//slice
+//splice
+//forEach
+//map
+
+
+// person = {
+//     name : `Arunalu`,
+//     age : 23,
+//     address : {
+//         street: `No 1, Main Street`,
+//         city: `Sooriyawewa`,
+//         country:`Sri Lanka`
+//     }
+// }
+
+// for (property in person.address){
+//     console.log(person.address[property])
+
+// }
+
+// class Person {
+//     constructor(name, age , ...address){
+//         this.name  = name;
+//         this.age = age;
+//         this.address = new Address(...address);
+//     }
+// }
+
+// class Address {
+//     constructor(street, city, country) {
+//         this.street = street;
+//         this.city = city;
+//         this.country =country;
+//     }
+// }
+
+// const person = new Person(`Arunalu`, 23, `No 1, Main Street`, `Sooriyawewa`, `Sri Lanka`);
+// console.log(person)
+
+// console.log(person.address.country)
+// const fruits = [{name : `Apple`, color : `red`, price : 100},
+//     {name : `Banana`, color : `yellow`, price : 75},
+//     {name : `Mango`, color : `green`, price : 90},
+//     {name : `pineapple`, color : `yellow`, price : 250},
+//     {name : `jackfruit`, color : `green`, price : 400},
+// ]
+
+//fruits.push({name : `Orange`, color : `orange`, price : 120});
+//ruits.pop()
+//fruits.splice(2,1)//first parameter is the index secont parameter is the nunber of items that we will remove
+//fruits.forEach(fruit => console.log(fruit.name))
+//const fruitNames = fruits.map(fruit => fruit.name)
+// const yellowFruits = fruits.filter(function(fruit){
+//     return fruit.color === `yellow`? fruit.name : null
+// })
+// const maxPrice = fruits.reduce((max , fruit) => max.price > fruit.price ? max : fruit)
+// console.log(maxPrice.name)
+//-----------------------------------------------------------------------------------------------------------
+// sort in the javascript
+
+// const numbers= [10 , 1 ,65, 5,8,8,100]
+
+// numbers.sort((a,b) => a-b)
+
+// console.log(numbers)
+
+// const fruits = [{name : `Apple`, color : `red`, price : 100},
+//     {name : `Banana`, color : `yellow`, price : 75},
+//     {name : `Mango`, color : `green`, price : 90},
+//     {name : `pineapple`, color : `yellow`, price : 250},
+//     {name : `jackfruit`, color : `green`, price : 400},
+// ]
+
+// fruits.sort((a,b) => a.price - b.price)
+
+// console.log(fruits)
+
+
+// fruits.sort((a,b) => a.color.localeCompare(b.color))//
+
+// console.log(fruits)
+//----------------------------------------------------------------------------------------------------------------------
+//const date = new Date(2025,0,1,1,2,3)
+//const date = new Date("2025-01-05T12:00:00Z")
+// const date = new Date(1755400000000)
+
+// console.log(date)
+// const year = date.getFullYear()
+// const month = date.getMonth()
+// const day  = date.getDate()
+// const hours = date.getHours()
+// const minutes = date.getMinutes()
+// const seconds = date.getSeconds()
+// const dawasa = date.getDay()
+
+// console.log(year)
+// console.log(month)
+// console.log(day)
+// console.log(hours)
+// console.log(minutes)
+// console.log(seconds)
+// console.log(dawasa)
+
+// const date = new Date()
+
+// date.setFullYear(1)
+// date.setMonth(0)
+// date.setDate(1)
+// date.setHours(5)
+// date.setMinutes(5)
+// date.setSeconds(5)
+// console.log(date)
+// const date1 = new Date("2025-10-5")
+// const date2 = new Date("2025-10-6")
+
+// if (date1 < date2){
+//     console.log("Happy New Year")
+// }-------------------------------------------------------------------------------------------------------
+//closure in javasctipt use in state management and prinate variables
+// we cannot change the value in globally but we can change the values lacally and get the values by 
+// returning objects
+// function createCounter(){
+//     let count = 0
+
+//     function increase() {
+//         count++;
+//         console.log(`The count is ${count}`)
+//     }
+
+//     return {increase}
+// }
+// let count =500
+// const counter  =  createCounter()
+
+// counter.increase()
+
+// counter.increase()
+//----------------------------------------------------------------------------------------------------------
+//set timeout function with clear timeout function
+// let timeoutID;
+// document.getElementById("set").onclick = function(){
+//    timeoutID = setTimeout(() => window.alert("Hello WORLD"),3000)
+//    console.log("Timeout set for 3 seconds")
+// }
+
+
+// document.getElementById("clear").onclick = function(){
+//    clearTimeout(timeoutID)
+//    console.log("Timeout cleared")
+// }
+//---------------------------------------------------------------------------------------------------------
