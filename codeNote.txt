@@ -973,5 +973,53 @@ const display = document.getElementById("stopwatch")
 //    display.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`;
 // }
 //--------------------------------------------------------------------------------------------------------------
+mathUtil.js file 
+// 
+export const PI = 3.1459
 
+// export function add(a,b){
+//     return a + b;
+// }
+// export function sub(a,b){
+//     return a - b;
+// }
+// export function mul(a,b){
+//     return a * b;
+// }
+// export function div(a,b){
+//     return a/b;
+// }
+
+index.js file
+
+// ES6 module 
+
+// import {PI , add , sub , mul , div } from './mathUtil.js'
+
+// console.log(PI);
+// console.log(add(2,3))
+// console.log(sub(5,2))
+// console.log(mul(2,3))
+// console.log(Math.floor(div(10,6)))
+//----------------------------------------------------------------------------------------------------------
+// try catch block 
+
+// try{
+//     const devident = window.prompt(`Enter a Number : `)
+//     const devider = window.prompt(`Enter a Number : `)
+
+//     if(devider == 0){
+//         throw new Error("Devider cannot be zero")
+//     }
+//     if(isNaN(devident) || isNaN(devider)){
+//         throw new Error("Invalid Input")
+//     }
+// }catch(error){
+    
+//         console.log(error.message)
+    
+// }finally{
+//     console.log("This part is using in file closing and the other stuff")
+// }
+//------------------------------------------------------------------------------------------------------------
 
