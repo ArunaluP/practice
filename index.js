@@ -1,42 +1,60 @@
-// Element Selectors
+// keyboard events keydown keyup keypress
+const letter1 = document.getElementById("letter1");
+const letter2 = document.getElementById("letter2");
+const letter3 = document.getElementById("letter3");
+const letter4 = document.getElementById("letter4");
+const letter5 = document.getElementById("letter5");
+const letter6 = document.getElementById("letter6");
+const letter7 = document.getElementById("letter7");
 
-// document.getElementById  ELEMENT OR NULL
-// document.getElementByClassName  HTML COLLECTION
-// document.getElementsByTagName  HTML COLLECTION
-// document.querySelector  FIRSTELEMENT OR NULL
-// document.querySelectorAll  NODELIST
+let aToggle = false;
+let uToggle = false;
 
-// const first = document.getElementById('first');
-// console.log(first);
-// first.style.fontFamily = 'Arial';
-// first.style.fontSize = '20px';
-// first.style.fontWeight = 'bold';
-// first.style.marginBottom = '10px';
-// first.textContent = `THIS my first javascript Course`
+document.addEventListener("keydown", (e) => {
+  if (e.repeat) return; // avoid firing repeatedly while key is held
+  const key = e.key.toLowerCase();
 
-//const fruits = document.getElementsByClassName(`fruits`)
+  switch (key) {
+    case "a":
+      if (!aToggle) {
+        aToggle = true;
+        letter1.textContent = "A for Attitude";
+        letter1.style.fontSize = "2.5rem";
+      } else {
+        aToggle = false;
+        letter5.textContent = "A for Ambitious";
+        letter5.style.fontSize = "2.2rem";
+      }
+      break;
 
-//fruits[0].style.backgroundColor = 'lightgreen'; 
+    case "r":
+      letter2.textContent = "R for Rational";
+      letter2.style.fontSize = "2.5rem";
+      break;
 
-// for(let fruit of fruits){
-//     fruit.style.backgroundColor = 'lightgreen';
-// }
-//fruits.forEach(fruit => {fruit.style.backgroundColor = 'lightgreen';}) // this will not change the background color because 
-//HTML collections does not have forEach method
-//Array.from(fruits).forEach(fruit => {fruit.style.backgroundColor = 'lightgreen';})
-const lis = document.getElementsByTagName('li');
-//console.log(lis);
-//Array.from(lis).forEach(li => {li.style.color = 'blue';})
+    case "u":
+      if (!uToggle) {
+        uToggle = true;
+        letter3.textContent = "U for Unique";
+        letter3.style.fontSize = "2.5rem";
+      } else {
+        uToggle = false;
+        letter7.textContent = "U for Unstoppable";
+        letter7.style.fontSize = "2.05rem";
+      }
+      break;
 
-// const fruit = document.querySelector('.fruits')
+    case "n":
+      letter4.textContent = "N for Noble";
+      letter4.style.fontSize = "2.5rem";
+      break;
 
-// fruit.style.backgroundColor = 'lightgreen';
-// const vegetable = document.querySelector('li')
-// vegetable.style.backgroundColor = 'lightgreen';
-const fruits = document.querySelectorAll('.fruits');
-const vegetables = document.querySelectorAll('li');
+    case "l":
+      letter6.textContent = "L for Logical";
+      letter6.style.fontSize = "2.5rem";
+      break;
 
-console.log(fruits);
-vegetables.forEach(vegetable => vegetable.style.backgroundColor = 'blue');
-
-fruits.forEach(fruit => fruit.style.backgroundColor = 'lightgreen');
+    default:
+      break;
+  }
+});

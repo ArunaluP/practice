@@ -1021,5 +1021,110 @@ index.js file
 // }finally{
 //     console.log("This part is using in file closing and the other stuff")
 // }
-//------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------// Element Selectors
 
+// document.getElementById  ELEMENT OR NULL
+// document.getElementByClassName  HTML COLLECTION
+// document.getElementsByTagName  HTML COLLECTION
+// document.querySelector  FIRSTELEMENT OR NULL
+// document.querySelectorAll  NODELIST
+
+// const first = document.getElementById('first');
+// console.log(first);
+// first.style.fontFamily = 'Arial';
+// first.style.fontSize = '20px';
+// first.style.fontWeight = 'bold';
+// first.style.marginBottom = '10px';
+// first.textContent = `THIS my first javascript Course`
+
+//const fruits = document.getElementsByClassName(`fruits`)
+
+//fruits[0].style.backgroundColor = 'lightgreen'; 
+
+// for(let fruit of fruits){
+//     fruit.style.backgroundColor = 'lightgreen';
+// }
+//fruits.forEach(fruit => {fruit.style.backgroundColor = 'lightgreen';}) // this will not change the background color because 
+//HTML collections does not have forEach method
+//Array.from(fruits).forEach(fruit => {fruit.style.backgroundColor = 'lightgreen';})
+// const lis = document.getElementsByTagName('li');
+//console.log(lis);
+//Array.from(lis).forEach(li => {li.style.color = 'blue';})
+
+// const fruit = document.querySelector('.fruits')
+
+// fruit.style.backgroundColor = 'lightgreen';
+// const vegetable = document.querySelector('li')
+// vegetable.style.backgroundColor = 'lightgreen';
+// const fruits = document.querySelectorAll('.fruits');
+// const vegetables = document.querySelectorAll('li');
+
+// console.log(fruits);
+// vegetables.forEach(vegetable => vegetable.style.backgroundColor = 'blue');
+
+// fruits.forEach(fruit => fruit.style.backgroundColor = 'lightgreen');
+\\-----------------------------------------------------------------------------------------------------------------------------------
+// const vegetables = document.getElementById('vegetables')
+// const firstveg = vegetables.firstElementChild
+// firstveg.style.backgroundColor = 'green'
+// const allVegs = vegetables.children
+// console.log(allVegs)
+// Array.from(allVegs).forEach(veg => {
+//     veg.style.backgroundColor = 'lightgreen';
+// });
+// const carrot = document.getElementById('carrot')
+// const potato = carrot.nextElementSibling
+// potato.style.backgroundColor = 'lightgreen'
+// const beetroot = potato.nextElementSibling
+// beetroot.style.backgroundColor = 'lightgreen'
+// const car = potato.previousElementSibling
+// car.style.backgroundColor = 'lightgreen'
+//.prevElementSibling
+//.nextElementSibling
+//.parentElement
+// carrot.parentElement.style.backgroundColor = 'lightgreen';
+//---------------------------------------------------------------------------------------------------------------------------------
+// const arunalu  = document.createElement('h1')
+
+// arunalu.textContent = 'Hello, I am a new element!';
+// arunalu.id = 'arunaluElement'
+// arunalu.style.fontFamily = 'Arial, sans-serif';
+
+
+//document.getElementById('box1').appendChild(arunalu)
+//document.getElementById('box1').prepend(arunalu)
+
+// const box1 = document.getElementById('box3')
+
+// document.body.insertBefore(arunalu, box1)
+//----------------------------------------------------------------------------------------------------------------------------------
+//These are the mouse Events in here also we can change another element by clicking on a different element
+
+// const myBox = document.getElementById("myBox")
+// let clicked = false;
+// function addChanges(event){
+//     clicked = true;
+//     event.target.style.backgroundColor = "yellow"
+//     event.target.style.color = "black"
+//     event.target.textContent = "Clicked!"
+//     event.target.style.fontSize= "1.25rem"
+// }
+// myBox.addEventListener("click", addChanges)
+// function moChanges(event){
+//     if(!clicked){
+//     event.target.style.backgroundColor = "tomato"
+//     event.target.style.color = "white"
+//     event.target.textContent = "Don't Touch Me!"
+//     event.target.style.fontSize= "1.25rem"
+//     }
+// }
+// myBox.addEventListener("mouseover",moChanges)
+// function mouChanges(event){
+//     if(!clicked){
+//     event.target.style.backgroundColor = "darkseagreen"
+//     event.target.style.color = "black"
+//     event.target.textContent = "Click Me"
+//     event.target.style.fontSize= "2.5rem"
+//     }
+// }
+//----------------------------------------------------------------------------------------------------------------------------------
