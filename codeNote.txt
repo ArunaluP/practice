@@ -1098,3 +1098,33 @@ index.js file
 
 // document.body.insertBefore(arunalu, box1)
 //----------------------------------------------------------------------------------------------------------------------------------
+//These are the mouse Events in here also we can change another element by clicking on a different element
+
+// const myBox = document.getElementById("myBox")
+// let clicked = false;
+// function addChanges(event){
+//     clicked = true;
+//     event.target.style.backgroundColor = "yellow"
+//     event.target.style.color = "black"
+//     event.target.textContent = "Clicked!"
+//     event.target.style.fontSize= "1.25rem"
+// }
+// myBox.addEventListener("click", addChanges)
+// function moChanges(event){
+//     if(!clicked){
+//     event.target.style.backgroundColor = "tomato"
+//     event.target.style.color = "white"
+//     event.target.textContent = "Don't Touch Me!"
+//     event.target.style.fontSize= "1.25rem"
+//     }
+// }
+// myBox.addEventListener("mouseover",moChanges)
+// function mouChanges(event){
+//     if(!clicked){
+//     event.target.style.backgroundColor = "darkseagreen"
+//     event.target.style.color = "black"
+//     event.target.textContent = "Click Me"
+//     event.target.style.fontSize= "2.5rem"
+//     }
+// }
+//----------------------------------------------------------------------------------------------------------------------------------

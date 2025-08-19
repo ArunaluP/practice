@@ -4,7 +4,7 @@ body{
     margin: 0;
     padding: 20px;
     display :flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;    
     justify-content: center;
     height: 100vh;
@@ -39,10 +39,54 @@ form{
     justify-content: center;
 }
 .box {
-    width: 300px;
-    height: 100px;
+    width: 200px;
+    height:200px;
     margin: 10px;
-    background-color: lightblue;
-    display: inline-block;
-    border : 3px solid blue;
+    text-align: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#myBox {
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    height : 100px;
+    width: 100px ;
+    font-family:Arial,sans-serif;
+    font-size:2.5rem ;
+    background-color: darkseagreen;
+    border:none;
+    text-align: center;
+    font-weight:bold;
+
+}
+#letter1{
+    background-color: red; 
+    font-size: 3.5rem;
+}
+#letter2{
+    background-color: blue;
+    font-size: 3.5rem;
+}
+#letter3{
+    background-color: purple;
+    font-size: 3.5rem;                          
+}
+#letter4{
+    background-color: brown;
+    font-size: 3.5rem;
+}
+#letter5{
+    background-color: orange;
+    font-size: 3.5rem;
+}
+#letter6{
+    background-color: green;
+    font-size: 3.5rem;
+}
+#letter7{
+    background-color: black;
+    font-size: 3.5rem;
 }
